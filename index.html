@@ -31,8 +31,21 @@
 				padding-top: 50px;
 			}
 
-			/* page-break-after works, as well */
+			/* Remove white border around page */
+			@page {
+				margin: 0;
+			}
 
+			body {
+				margin: 0 !important;
+				padding: 0 !important;
+			}
+
+			.resume-wrapper {
+				margin: 0 !important;
+				border-radius: 0 !important;
+				box-shadow: none !important;
+			}
 		}
 	</style>
 
@@ -182,7 +195,8 @@
 
 										</article><!--//resume-timeline-item-->
 
-										<article class="resume-timeline-item position-relative pb-5">
+										<div class="pagebreak"></div>
+									<article class="resume-timeline-item position-relative pb-5">
 
 											<div class="resume-timeline-item-header mb-2">
 
